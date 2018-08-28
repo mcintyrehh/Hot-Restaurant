@@ -1,8 +1,8 @@
 var express = require("express");
-var bodyParse = require("body-parse");
+var bodyParser = require("body-parser");
 var path = require("path");
 
-var exp = express();
+var app = express();
 var PORT = 3002;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,8 +32,14 @@ app.get("/api/tables", function(req, res) {
 app.get("/api/waitlist", function(req, res) {
     res.json(reservations.slice(5));
 });
+app.post("/api/tables", function(req, res) {
+var newRes = req.body;
+  console.log(newRes);
+  reservations.push(newRes);
+  res.json(newRes);
+})
 
 //starts listening
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
-  });
+});
