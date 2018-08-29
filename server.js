@@ -20,10 +20,13 @@ var reservations = [
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
 });
-
-app.get("/results", function (req, res) {
+app.get("/tables", function (req, res) {
     res.sendFile(path.join(__dirname, "results.html"));
 });
+
+// app.get("/reserve", function (req, res) {
+//     res.sendFile(path.join(__dirname, "results.html"));
+// });
 
 app.get("/api/tables", function (req, res) {
     res.json(reservations.slice(0, 4));
