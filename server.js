@@ -44,29 +44,29 @@ app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
 
-{/* <script type="text/javascript"> */ }
+// {/* <script type="text/javascript"> */ }
 
-$("#add-btn").on("click", function (event) {
-    event.preventDefault()
+// $("#add-btn").on("click", function (event) {
+//     event.preventDefault()
 
-    var newRes = {
-        id: $("#id").val().trim(),
-        name: $("#name").val().trim(),
-        phone: $("#phone").val().trim(),
-        email: $("#email").val().trim()
-    };
+//     var newRes = {
+//         id: $("#id").val().trim(),
+//         name: $("#name").val().trim(),
+//         phone: $("#phone").val().trim(),
+//         email: $("#email").val().trim()
+//     };
 
-    // Question: What does this code do??
-    $.post("/api/tables", newRes)
-        .then(function (data) {
-            console.log(data);
-            console.log("Reservation Added");
-        });
+//     // Question: What does this code do??
+//     $.post("/api/tables", newRes)
+//         .then(function (data) {
+//             console.log(data);
+//             console.log("Reservation Added");
+//         });
 
-});
+// });
 
 // </script >
-{/* <script>
+/* <script>
 $.get("/api/tables", function(data) {
     for (var i = 0; i<data.length; i++) {
         var res = data[i];
@@ -88,5 +88,5 @@ $.get("/api/waitlist", function(data) {
         $("#waitlist").append(createCard(res));
     }
 })
-</script> */}
+</script> */
 
