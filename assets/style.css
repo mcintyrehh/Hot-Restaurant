@@ -1,6 +1,4 @@
-element.style {
 
-}
 .jumbotron .h1, .jumbotron h1 {
     color: inherit;
 }
@@ -60,7 +58,7 @@ html {
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 :after, :before {
     -webkit-box-sizing: border-box;
