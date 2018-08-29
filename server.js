@@ -21,8 +21,8 @@ app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/reserve", function (req, res) {
-    res.sendFile(path.join(__dirname, "reserve.html"));
+app.get("/results", function (req, res) {
+    res.sendFile(path.join(__dirname, "results.html"));
 });
 
 app.get("/api/tables", function (req, res) {
