@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 var app = express();
-var PORT = 3002;
+var PORT = proess.env.PORT || 3002;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -66,7 +66,7 @@ $("#add-btn").on("click", function (event) {
 });
 
 // </script >
-// <script>
+{/* <script>
 $.get("/api/tables", function(data) {
     for (var i = 0; i<data.length; i++) {
         var res = data[i];
@@ -88,5 +88,5 @@ $.get("/api/waitlist", function(data) {
         $("#waitlist").append(createCard(res));
     }
 })
-//</script
+</script> */}
 
