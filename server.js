@@ -14,6 +14,36 @@ var reservations = [
         name: "Henry",
         email: "mcintyrehh@gmail.com",
         phone: 9193490600
+    },
+    {
+        id: "09ur2098",
+        name: "Henry",
+        email: "mcintyrehh@gmail.com",
+        phone: 9193490600
+    },
+    {
+        id: "09ur2098",
+        name: "Henry",
+        email: "mcintyrehh@gmail.com",
+        phone: 9193490600
+    },
+    {
+        id: "09ur2098",
+        name: "Henry",
+        email: "mcintyrehh@gmail.com",
+        phone: 9193490600
+    },
+    {
+        id: "09ur2098",
+        name: "Henry",
+        email: "mcintyrehh@gmail.com",
+        phone: 9193490600
+    },
+    {
+        id: "09ur2098",
+        name: "Henry",
+        email: "mcintyrehh@gmail.com",
+        phone: 9193490600
     }
 ];
 
@@ -29,7 +59,7 @@ app.get("/reserve", function (req, res) {
 });
 
 app.get("/api/tables", function (req, res) {
-    res.json(reservations.slice(0, 4));
+    res.json(reservations.slice(0, 5));
 });
 
 app.get("/api/waitlist", function (req, res) {
